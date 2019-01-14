@@ -65,6 +65,7 @@ background: url(./img/football_1280.jpg) no-repea
 header::after {
 background: url(./img/football_767.jpg) no-repeat;
 }
+}
 
 .surface{
 width: 190px;
@@ -192,14 +193,12 @@ display: flex;
 padding-top: 9rem;
 flex-direction: column;
 align-items: flex-start;
-
 position: relative;
 }
 
 .footballer-block .athlets{
 box-sizing: border-box;
 width: 100%;
-
 padding-left: 53%;
 padding-right: auto;
 }
@@ -401,7 +400,6 @@ justify-content: space-between;
 z-index: 1;
 }
 
-
 footer::after, footer::before  {
 content: "";
 width: 100%;
@@ -516,9 +514,7 @@ width: 2rem;
 color: white;
 }
 
-
 @media(max-width: 745px){
-
 header {
 padding-top: 3rem;
 padding-bottom: 8rem;
@@ -658,7 +654,6 @@ align-items: center;
 font-size: 3rem;
 letter-spacing: 0.4rem;
 }
-l
 
 .download-app-text .download-app-header{
 margin-bottom: 0;
@@ -831,7 +826,6 @@ background-size: cover;
 }
 
 @media (min-width: 746px) and (max-width: 900px){
-	
 header {
 padding-top: 4rem;
 padding-bottom: 9rem;
@@ -932,7 +926,7 @@ margin-bottom: 10rem;
 }
 
 .be-active:nth-child(-6n+6) .sportsmens-paragraph {
-margin-bottom: 11rem;
+    margin-bottom: 11rem;
 }
 
 .sportsmens-header{
@@ -952,6 +946,7 @@ margin-top: -1rem;
 margin-bottom: 11rem;
 }
 
+
 .square-left, .square-right{
 max-width: 115px;
 height: 115px;
@@ -961,6 +956,7 @@ left: 3.5rem;
 }
    
 .download-app div{
+
 margin-left: auto;
 margin-right: auto;
 }
