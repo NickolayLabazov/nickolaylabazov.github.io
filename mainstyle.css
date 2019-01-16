@@ -633,18 +633,14 @@ border: 2px solid #5e42b0;
 }
 
 .growth .line {
-height: 4px;
-border: 2px solid #ffffff;
+border: 2px solid white;
 }
 
-.square-left .line, .square-right .line {
-height: 4px;
-border: 2px solid #999999;
-}
 
 .square-left .line, .square-right .line {
 width: 1.4rem;
 margin-top: 0.2rem;
+border: 2px solid #999999;
 }
 
 .square-left .number, .square-right .number {
@@ -799,6 +795,22 @@ height: 70px;
 position: absolute;
 top: -6rem;
 left: 2rem;
+}
+
+
+.name{
+margin-top: 12rem;
+margin-bottom: 4.5rem;
+margin-left: 6.25vw;
+}
+	
+.footer{
+padding-top: 10rem;
+padding-bottom: 1rem;
+}
+
+.footer::after {
+background: url(./img/game_767.jpg) no-repeat;
 }
 }
 
