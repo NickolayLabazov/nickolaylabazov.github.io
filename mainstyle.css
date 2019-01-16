@@ -17,7 +17,7 @@ min-width: 300px;
 max-width: 2000px;
 }
 
-header {
+.header {
 width: 100%;
 margin: 0;
 padding-top: 4.5rem;
@@ -32,7 +32,7 @@ justify-content: space-between;
 box-sizing: border-box;
 }
 
-header::after, header::before  {
+.header::after, .header::before  {
 content: "";
 width: 100%;
 height: 100%;
@@ -42,27 +42,27 @@ top: 0;
 left: 0;
 }
 
-header::after {
+.header::after {
 background: url(./img/football_1920.jpg) no-repeat;
 background-size: cover;
 background-position: center;
 z-index: 0;
 }
 
-header::before {
+.header::before {
 background-color: #0a0e34;
 opacity: 0.8;
 z-index: 1;
 }
 
 @media (min-width: 746px) and (max-width: 1280px){
-header::after {
+.header::after {
 background: url(./img/football_1280.jpg) no-repea
 }
 }
 
 @media (max-width: 745px){
-header::after {
+.header::after {
 background: url(./img/football_767.jpg) no-repeat;
 }
 }
@@ -226,7 +226,18 @@ padding-bottom: 0;
 margin: 0 1.4rem 0 0;
 width: 2rem;
 height: 3.8rem;
-border-bottom: 3px solid blue;
+display: flex;
+flex-direction: column;
+}
+
+.line{
+box-sizing: border-box;
+padding: 0;
+margin: 0.4vw 0 0 0;
+width: 2rem;
+height: 6px;
+border: 3px solid #5e42b0;
+border-radius: 3px;
 }
 
 .footballer-block .pictures {
@@ -272,8 +283,11 @@ letter-spacing: 0.1rem;
 }
 
 .growth .number{
-border-bottom: 3px solid white;
 color: #9173e6;
+}
+
+.growth .line{
+border: 3px solid white;
 }
 
 .footballer-block .growth .number {
@@ -384,7 +398,7 @@ justify-content: center;
 position: relative;
 }
 
-footer{
+.footer{
 box-sizing: border-box;
 width: 100%;
 margin: 0;
@@ -400,7 +414,7 @@ justify-content: space-between;
 z-index: 1;
 }
 
-footer::after, footer::before  {
+.footer::after, .footer::before  {
 content: "";
 width: 100%;
 height: 100%;
@@ -410,14 +424,14 @@ top: 0;
 left: 0;
 }
 
-footer::after {
+.footer::after {
 background: url(./img/game_1920.jpg) no-repeat;
 background-size: cover;
 background-position: center;
 z-index: 0;
 }
 
-footer::before {
+.footer::before {
 background-color: #0a0e34;
 opacity: 0.8;
 z-index: 1;
@@ -427,20 +441,20 @@ z-index: 1;
 .name{
 margin-top: 12rem;
 margin-bottom: 4.5rem;
-margin-left: 2rem;
+margin-left: 6.25vw;
 }
 	
-footer{
+.footer{
 padding-top: 10rem;
 padding-bottom: 1rem;
 }
 
-footer::after {
+.footer::after {
 background: url(./img/game_767.jpg) no-repeat;
 }
 }
 
-footer .download{
+.footer .download{
 margin-top: 15rem;
 margin-bottom: 26rem;	
 }
@@ -509,13 +523,18 @@ margin: auto;
 }
 
 .square-left .number,  .square-right .number {
-border-bottom: 3px solid #999999;
-width: 2rem;
 color: white;
 }
 
+.square-left .line,  .square-right .line {
+border: 3px solid #999999;
+width: 2rem;
+}
+
+
+
 @media(max-width: 745px){
-header {
+.header {
 padding-top: 3rem;
 padding-bottom: 8rem;
 }
@@ -606,6 +625,38 @@ height: 7.5vw;
 width: 4.5vw;
 } 
 
+.line {
+width: 4.5vw;
+margin: 0.8vw 0 0 0;
+height: 4px;
+border: 2px solid #5e42b0;
+}
+
+.growth .line {
+height: 4px;
+border: 2px solid #ffffff;
+}
+
+.square-left .line, .square-right .line {
+height: 4px;
+border: 2px solid #999999;
+}
+
+
+
+
+
+}
+
+.square-left .line, .square-right .line {
+width: 1.4rem;
+margin-top: 0.2rem;
+}
+
+.square-left .number, .square-right .number {
+font-size: 1.4rem;
+}
+
 .square-left .number, .square-right .number {
 margin: 0;
 width: 1.5rem;
@@ -664,11 +715,11 @@ margin-top: 0;
 font-size: 1.4rem;
 }
 
-footer .surface{
+.footer .surface{
 margin-top: 0;
 }
 
-footer .download{
+.footer .download{
 margin-top: 5.5rem;
 margin-bottom: 8rem;	
 }
@@ -819,14 +870,14 @@ margin-left: 10rem;
 margin-left: 1rem;
 }
 
-footer::after {
+.footer::after {
 background: url(./img/game_1280.jpg) no-repeat;
 background-size: cover;
 }
 }
 
 @media (min-width: 746px) and (max-width: 900px){
-header {
+.header {
 padding-top: 4rem;
 padding-bottom: 9rem;
 }
@@ -968,7 +1019,7 @@ align-items: center;
 margin-top: 6rem;
 }
 
-footer{
+.footer{
 padding-top: 13rem;
 padding-bottom: 2rem;
 
@@ -980,7 +1031,7 @@ letter-spacing: 0.1rem;
 margin-top: 1.5rem;
 }
 
-footer .download {
+.footer .download {
 margin-top: 29rem;
 margin-bottom: 6rem;
 }
